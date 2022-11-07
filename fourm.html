@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fourm.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+</head>
+
+<body>
+    <div class="head">
+        <div class="title">排球少年</div>
+        <a href="index.html" class="title">首页</a>
+        <a href="character_intro.html" class="title">人物</a>
+        <a href="fourm.html" class="title">讨论</a>
+        <a href="more.html" class="title">more</a>
+    </div>
+    <div class="discuss">
+        <h1 class="top">论坛</h1>
+        <div class="bigdiv first">
+            <p class="top1">浏览话题</p>
+            <input type="text" value="发起新话题" class="fabu">
+            <input type="button" value="发布" class="button">
+            <ul class="lang">
+                <li>假装有一个帖子</li>
+                <li>这是第一个评论</li>
+                <li>点击发布发表新评论</li>
+            </ul>
+        </div>
+        <div class="bigdiv second">
+            <h1>关于此模块</h1>
+            <div>
+                <p>本页面仅用于对网站首页的内容进行讨论，请不要在讨论版中讨论与首页无关的内容
+                    否则管理员可予与删除。</p>
+                <ul>
+                    <li>点击页面左边的发起新的讨论可发起新贴。</li>
+                    <li>点击任意一贴右下角的回复按钮可回复对方。</li>
+                    <li>想要学习Wiki系统以及编写方法的请阅读</li>
+                    <li>如果事情紧急可以尝试直接联系管理员</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        let button=document.querySelector('.button');
+        let fabu=document.querySelector('.fabu');
+        let ul=document.querySelector('.lang');
+        button.onclick = function(){
+            let li=document.createElement('li');
+            li.innerHTML=fabu.value;
+            ul.insertBefore(li,ul.children[1]);
+        }
+    </script>
+</body>

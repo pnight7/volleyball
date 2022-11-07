@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/c_intro.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <p>还有未完善信息？<a href="#">欢迎补充！</a></p>
+    <div class="head">
+        <div class="title"><img src="image/volleyball.png" alt=""> 排球少年</div>
+        <a href="index.html" class="title">首页</a>
+        <a href="character_intro.html" class="title">人物</a>
+        <a href="fourm.html" class="title">讨论</a>
+        <a href="more.html" class="title">修改信息</a>
+    </div>
+    <table>
+        <div class="list">
+            <ul>
+                <li>乌野高校</li>
+                <li>青叶城西高校</li>
+                <li>青叶城西高校</li>
+                <li>青叶城西高校</li>
+                <li>青叶城西高校</li>
+            </ul>
+        </div>
+        <tr><th colspan="4" class="all">总览</th></tr>
+        <tr><th colspan="4">乌野高校</th></tr>
+        <tr>
+            <td><a href="characters001.html"><img src="image/001.jpg" class="photo"></a></td>
+            <td><img src="image/002.jpg" class="photo"></td>
+            <td><img src="image/003.jpg" class="photo"></td>
+            <td><img src="image/004.jpg" class="photo"></td>
+        </tr>
+        <tr>
+            <td ><a href="characters001.html" class="intro">日向翔太</a></td>
+            <td class="intro">影山飞雄</td>
+            <td class="intro">泽村大地</td>
+            <td class="intro">菅原孝支</td>
+        </tr>
+        <tr>
+            <td><img src="image/005.jpg" class="photo"></td>
+            <td><img src="image/006.jpg" class="photo"></td>
+            <td><img src="image/007.jpg" class="photo"></td>
+            <td><img src="image/008.jpg" class="photo"></td>
+        </tr>
+        <tr>
+            <td class="intro">田中龙之介</td>
+            <td class="intro">西谷夕</td>
+            <td class="intro">东峰旭</td>
+            <td class="intro">月岛萤</td>
+        </tr>
+        <tr>
+            <td><img src="image/009.jpg" class="photo"></td>
+            <td><img src="image/010.jpg" class="photo"></td>
+            <td><img src="image/011.jpg" class="photo"></td>
+            <td><img src="image/012.jpg" class="photo"></td>
+        </tr>
+        <tr>
+            <td class="intro">山口忠</td>
+            <td class="intro">缘下力</td>
+            <td class="intro">清水洁子</td>
+            <td class="intro">谷地仁花</td>
+        </tr>
+        <tr>
+            <td><img src="image/013.jpg" class="photo"></td>
+            <td><img src="image/014.jpg" class="photo"></td>
+            <td><img src="image/015.jpg" class="photo"></td>
+        </tr>
+        <tr>
+            <td class="intro">武田一鉄</td>
+            <td class="intro">乌养系心</td>
+            <td class="intro">乌养一系</td>
+        </tr>
+    </table>
+    <table>
+        <tr><th colspan="4">青叶城西高校</th></tr>
+        <tr>
+            <td><img src="image/016.jpg" class="photo"></td>
+        </tr>
+        <tr>
+            <td class="intro">及川彻</td>
+        </tr>
+    </table>
+    <script>
+        let all=document.querySelector('.all');
+        let list=document.querySelector('.list');
+        console.log(list);
+        all.onmouseover = function() {
+            list.style.display='block';
+        }
+        list.onmouseover = function() {
+            list.style.display='block';
+        }
+        all.onmouseout = function() {
+            list.style.display='none';
+        }
+        list.onmouseout = function() {
+            list.style.display='none';
+        }
+    </script>
+</body>
+</html>

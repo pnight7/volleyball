@@ -1,0 +1,40 @@
+body {
+    background: url(../image/2006.jpg) no-repeat center center fixed;
+}
+.lil{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 1000px;
+    height: 40px;
+}
+.olo{
+    float: left;;
+    height: 40px;
+    width: 80px;
+    background-color: blue;
+}
+form {
+    margin: 0 auto;
+    width: 1000px;
+    height: 500px;
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+.first{
+    display: block;
+}
+.second{
+    display: none;
+}
+.third{
+    display: none;
+}
+input{
+    margin-bottom: 20px;
+}
+.article {
+    height: 100px;
+}
+.talk{
+    height: 100px;
+}

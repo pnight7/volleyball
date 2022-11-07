@@ -1,0 +1,61 @@
+.head {
+    position:fixed;
+    top:0;
+    left: 40px;
+    height: 50px;
+    background-color:white;
+}
+.head img{
+    width: 40px;
+    vertical-align: middle;
+} 
+.title {
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-weight: 800;
+    height: 50px;
+    width: 290px;
+    text-align: center;
+    line-height: 50px;
+    border-left:  1px;
+    border-style: solid;
+    border-color:rgb(0, 0, 0) ;
+}
+
+.head > a {
+    text-decoration: none;
+    color: black;
+}
+.head > a:hover {
+    background-color: blue;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?q2kaci');
+    src:  url('../fonts/icomoon.eot?q2kaci#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?q2kaci') format('truetype'),
+      url('../fonts/icomoon.woff?q2kaci') format('woff'),
+      url('../fonts/icomoon.svg?q2kaci#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  .head :nth-child(2)::before{
+    content: '\e901';
+    font-family: 'icomoon';
+  }
+  .head :nth-child(3)::before{
+    content: '\e923';
+    font-family: 'icomoon';
+  }
+  .head :nth-child(4)::before{
+    content: '\e916';
+    font-family: 'icomoon';
+  }
+  .head :nth-child(5)::before{
+    content: '\e982';
+    font-family: 'icomoon';
+  }

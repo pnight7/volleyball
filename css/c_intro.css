@@ -1,0 +1,61 @@
+body{
+    background:url(../image/2006.jpg) no-repeat center center fixed;
+
+}
+p{
+    font-size: 25px;
+    margin: 60px 15px 5px 20px;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?q2kaci');
+    src:  url('../fonts/icomoon.eot?q2kaci#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?q2kaci') format('truetype'),
+      url('../fonts/icomoon.woff?q2kaci') format('woff'),
+      url('../fonts/icomoon.svg?q2kaci#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+table {
+    position: relative;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: orange;
+}
+
+.all::after{
+    content: '\e9ba';
+    font-family: 'icomoon';
+    font-size: 30px;
+  }
+
+  .list{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    left: 50%;
+    margin-left: -100px;
+    top: 152px;
+  }
+
+.photo {
+    width: 207px;
+    height: 278px;
+    margin-left:30px ;
+    margin-right:30px ;
+}
+.intro {
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+}
+th {
+    font-size: 40px;
+}

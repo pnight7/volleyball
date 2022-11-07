@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/more.css">
+</head>
+<body>
+    <div class="head">
+        <div class="title"><img src="image/volleyball.png" alt=""> 排球少年</div>
+        <a href="index.html" class="title">首页</a>
+        <a href="character_intro.html" class="title">人物</a>
+        <a href="fourm.html" class="title">讨论</a>
+        <a href="more.html" class="title">more</a>
+    </div>
+    <div class="lil">
+        <div class="olo1 olo">增加人物</div>
+        <div class="olo2 olo">删除人物</div>
+        <div class="olo3 olo">修改人物</div>
+    </div>
+    <form class="first">
+        人物：<input type="text" value="人物名" class="name"><br> 
+        背景音乐：<input type="file" class="music"><br>
+        图片：<input type="file" class="photo" multiple="multiple"><br>
+        正文：<input type="textarea" class="article"> <br>
+        语录：<input type="text" class="talk"><br>
+        <input type="submit" value="提交内容">
+    </form>
+    <form class="second">
+        人物：<input type="text" value="删除人物名" class="name"><br> 
+        <input type="submit" value="提交">
+    </form>
+    <form class="third">
+        人物：<input type="text" value="人物名" class="name"><br> 
+        背景音乐：<input type="file" class="music"><br>
+        图片：<input type="file" class="photo" multiple="multiple"><br>
+        正文：<input type="textarea" class="article"> <br>
+        语录：<input type="text" class="talk"><br>
+        <input type="submit" value="修改内容">
+    </form>
+    <script>
+        let olo1=document.querySelector('.olo1');
+        let olo2=document.querySelector('.olo2');
+        let olo3=document.querySelector('.olo3');
+        let form=document.getElementsByTagName('form');
+        olo1.onclick = function() {
+            for(let i=0;i<form.length;i++){
+                form[i].style.display='none';
+            }
+            form[0].style.display='block';
+        }
+        olo2.onclick = function() {
+            for(let i=0;i<form.length;i++){
+                form[i].style.display='none';
+            }
+            form[1].style.display='block';
+        }
+        olo3.onclick = function() {
+            for(let i=0;i<form.length;i++){
+                form[i].style.display='none';
+            }
+            form[2].style.display='block';
+        }
+    </script>
+</body>
+</html>

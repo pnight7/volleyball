@@ -1,0 +1,49 @@
+
+body {
+    background: url(../image/1-1.png) no-repeat center center fixed;
+}
+
+.discuss {
+    background-color: #f2f2f2;
+    color:black;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.top {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    font-size: 40px;
+    border-bottom: 5px pink solid;
+}
+
+.top1 {
+    width: 800px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border-bottom: 2px black solid;
+}
+
+.bigdiv {
+    float: left;
+}
+
+.first {
+    width: 900px;
+    background-color: #f2f2f2;
+}
+
+.second {
+    
+    width: 400px;
+    background-color: white;
+}
+
+.fabu {
+    font-size: 20px;
+    width: 800px;
+    height: 50px;
+    margin-left: 20px;
+}
