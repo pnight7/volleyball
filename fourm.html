@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fourm.css">
     <link rel="stylesheet" href="css/common.css">
 </head>
@@ -22,13 +23,14 @@
     <div class="discuss">
         <h1 class="top">论坛</h1>
         <div class="bigdiv first">
-            <p class="top1">浏览话题</p>
-            <input type="text" value="发起新话题" class="fabu">
-            <input type="button" value="发布" class="button">
-            <ul class="lang">
-                <li>假装有一个帖子</li>
-                <li>这是第一个评论</li>
-                <li>点击发布发表新评论</li>
+            <p class="top1">浏览话题 <a href="discuss.html">发布新话题</a></p>
+            <ul>
+                <li><h2><a href="characters001.html" class="pug">日向向阳人物介绍</a></h2></li>
+                <li><h2><a href="#" class="pug">影山飞雄人物介绍</a></h2></li>
+                <li><h2><a href="#" class="pug">关于动漫的一些见解</a></h2></li>
+                <li><h2><a href="#" class="pug">千山鸟飞绝</a></h2></li>
+                <li><h2><a href="#" class="pug">web作业好难做不来</a></h2></li>
+                <li><h2><a href="#" class="pug">一里可爱捏</a></h2></li>
             </ul>
         </div>
         <div class="bigdiv second">
@@ -46,13 +48,21 @@
         </div>
     </div>
     <script>
-        let button=document.querySelector('.button');
-        let fabu=document.querySelector('.fabu');
-        let ul=document.querySelector('.lang');
-        button.onclick = function(){
-            let li=document.createElement('li');
-            li.innerHTML=fabu.value;
-            ul.insertBefore(li,ul.children[1]);
+        let button = document.querySelector('.button');
+        let fabu = document.querySelector('.fabu');
+        let ul = document.querySelector('.lang');
+        button.onclick = function () {
+            let li = document.createElement('li');
+            li.innerHTML = fabu.value + "<a href='javascript:;'>删除</a>";
+            ul.insertBefore(li, ul.children[1]);
+            let a = document.querySelectorAll('a');
+            for (let i = 0; i < a.length; i++) {
+                a[i].onclick = function () {
+                    console.log('11');
+                    ul.removeChild(this.parentNode);
+                }
+            }
         }
+
     </script>
 </body>
