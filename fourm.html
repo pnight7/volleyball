@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fourm.css">
     <link rel="stylesheet" href="css/common.css">
+    <script type="text/javascript" src="js/jQuery.js"></script>
 </head>
 </head>
 
@@ -29,8 +30,8 @@
                 <li><h2><a href="#" class="pug">影山飞雄人物介绍</a></h2></li>
                 <li><h2><a href="#" class="pug">关于动漫的一些见解</a></h2></li>
                 <li><h2><a href="#" class="pug">千山鸟飞绝</a></h2></li>
-                <li><h2><a href="#" class="pug">web作业好难做不来</a></h2></li>
-                <li><h2><a href="#" class="pug">一里可爱捏</a></h2></li>
+                <li><h2><a href="#" class="pug">这是一个标题</a></h2></li>
+                <li><h2><a href="#" class="pug">再来一个</a></h2></li>
             </ul>
         </div>
         <div class="bigdiv second">
@@ -44,10 +45,62 @@
                     <li>想要学习Wiki系统以及编写方法的请阅读</li>
                     <li>如果事情紧急可以尝试直接联系管理员</li>
                 </ul>
+                <ul class="uli">
+                    <li><img src="image/tape1.jpg" alt=""></li>
+                    <li><img src="image/001-1.jpg" alt=""></li>
+                    <li><img src="image/1-1.png" alt=""></li>
+                </ul>
+                <div class="pa1"> 
+                    <span class="a1"><</span>
+                    <span class="a2">></span>
+                </div>
             </div>
         </div>
     </div>
-    <script>
+    <script type="text/javascript">
+        $(function(){
+			// 设置图片的大小
+    		var img = 400;
+			// 设置索引为 0 
+    		var index = 0;
+			// 设置图片的数量的长度
+    		var option = $('.uli>li img').length;
+    		// 左边部分开始
+    		$('.a2').click(function(){
+				// 再点击事件里面执行回调函数
+                left()
+    		})
+			// 函数名称 lest 
+    		function left(){
+				// index的索引值为 0 当他小于图片的长度的时候 就让他执行 ++ option要执行减 1 否则会有一张空白的页面
+               if (index < option-1) {
+                     index++
+                }else {
+                	index = 0
+                }
+                move()
+    		}
+    		// 左边部分结束
+    		// 右边部分开始
+    		$('.a1').click(function(){
+				// 再点击事件里面执行回调函数
+    			right()
+    		})
+    		function right(){
+				// index的索引值为 0 当他大于图片的长度的时候 就让他执行 -- 
+    			if (index > 0) {
+    				index--
+    			}else {
+    				index = option-1
+    			}
+    			move()
+    		}
+			// right left函数里面都有 move 就等于你点击你的 index 索引的时候为多少数值就会有几个图片滑过  500 为时间
+    		function move(){
+               var a = -index * img + 'px'
+               $('.uli li>img').animate({'left':a},500)
+    		}
+    	})
         let button = document.querySelector('.button');
         let fabu = document.querySelector('.fabu');
         let ul = document.querySelector('.lang');
@@ -63,6 +116,5 @@
                 }
             }
         }
-
     </script>
 </body>

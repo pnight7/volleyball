@@ -55,3 +55,36 @@ li {
     color: blue;
     text-decoration:none;
 }
+
+.uli{
+    float: right;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+}
+.uli li>img{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    height: 400px;
+    width: 400px;
+}
+.uli li{
+    width: 400px;
+    height: 400px;
+    list-style:none;
+}
+.a1{
+    position: absolute;
+    top: 500px;
+    cursor: pointer;
+    font-size: 50px
+}
+.a2{
+    position: absolute;
+    top: 500px;
+    right: 110px;
+    cursor: pointer;
+    font-size: 50px
+}
